@@ -6,9 +6,9 @@
 }
 
 @theme {
-  --background-image-mobile: url("../../public/assets/images/background-mobile.png");
-  --background-image-tablet: url("../../public/assets/images/background-tablet.png");
-  --background-image-desktop: url("../../public/assets/images/background-desktop.png");
+  --background-image-mobile: url("../public/assets/images/background-mobile.png");
+  --background-image-tablet: url("../public/assets/images/background-tablet.png");
+  --background-image-desktop: url("../public/assets/images/background-desktop.png");
 
   --color-neutral-0: hsl(0, 0%, 100%);
   --color-neutral-300: hsl(252, 6%, 83%);
@@ -18,12 +18,6 @@
 
   --color-orange-500: hsl(7, 88%, 67%);
   --colot-orange-700: hsl(7, 71%, 60%);
-
-  --gradient-text: linear-gradient(
-    to right,
-    hsl(7, 86%, 67%),
-    hsl(0, 0%, 100%)
-  );
 
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
