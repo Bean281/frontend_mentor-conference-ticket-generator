@@ -3,12 +3,19 @@
 import Image from "next/image";
 import iconUpload from "../../public/assets/images/icon-upload.svg";
 import infoIcon from "../../public/assets/images/icon-info.svg";
-import BackGroundLayout from "@/components/BackGroundLayout";
+import BackGroundLayout from "../../components/BackGroundLayout";
 import { useDropzone } from "react-dropzone";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { useCallback, useRef, useState } from "react";
-import { UseFormContext } from "@/context/FormContext";
+import { UseFormContext } from "../../context/FormContext";
+
+interface FormData {
+  avatar: string;
+  fullName: string;
+  email: string;
+  userName: string;
+}
 
 const DesignForm = () => {
   const {
@@ -16,9 +23,9 @@ const DesignForm = () => {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm({
+  } = useForm<FormData>({
     defaultValues: {
-      avatar: null,
+      avatar: "",
       fullName: "",
       email: "",
       userName: "",
@@ -78,7 +85,7 @@ const DesignForm = () => {
     }
   };
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data: FormData) => {
     // Actual form submission logic
     const formData = {
       ...data,

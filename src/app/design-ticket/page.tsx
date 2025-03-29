@@ -33,12 +33,12 @@ if (!formData) {
         </div>
 
         <div className="header_dsc mt-5 text-center text-xl text-neutral-300">
-          We've emailed your ticket to{" "}
+        We&apos;ve emailed your ticket to{" "}
           <span className="text-orange-500">{formData.email}</span> and will
           send updates in the run up to the event.
         </div>
 
-        <div className="relative mt-20 flex w-[90%] max-w-2xl flex-col items-center justify-center bg-[url('@/public/assets/images/pattern-ticket.svg')] bg-contain bg-center bg-no-repeat pl-2 md:pl-35 lg:pl-35">
+        <div className="relative mt-20 flex w-[90%] max-w-2xl flex-col items-center justify-center bg-[url('/assets/images/pattern-ticket.svg')] bg-contain bg-center bg-no-repeat pl-2 md:pl-35 lg:pl-35">
           <div className="w-full">
             <div className="intro-info-ctn mt-10 pl-5">
               <div className="logo-ctn">
