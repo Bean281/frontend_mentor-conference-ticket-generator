@@ -27,4 +27,4 @@ I am in my practicing Frontend. This is challenge from Frontend Mentor. The norm
 4. Open http://localhost:3000 in your browser
 
 ## 🎞️ Preview
-![conference-ticket-generator]()
+![conference-ticket-generator](src/public/design/state-form-complete-desktop.jpg)
